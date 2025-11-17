@@ -1,0 +1,18 @@
+{
+  "assistant": {
+    "url": "https://api.<region>.assistant.watson.cloud.ibm.com",
+    "assistant_id": "YOUR_ASSISTANT_ID",
+    "api_key": "YOUR_API_KEY",
+    "version": "2024-05-01"
+  },
+  "cloudant": {
+    "url": "https://<host>",
+    "db_name": "voice_health_db",
+    "api_key": "YOUR_CLOUDANT_KEY"
+  },
+  "tts": {
+    "url": "https://api.<region>.text-to-speech.watson.cloud.ibm.com/instances/<id>",
+    "api_key": "YOUR_TTS_KEY",
+    "voice": "en-US_AllisonV3Voice"
+  }
+}
