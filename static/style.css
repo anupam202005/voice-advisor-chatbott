@@ -1,0 +1,69 @@
+/* Futuristic IBM Corporate Theme (B2 #0F62FE) with soft animated waves */
+:root{
+  --ibm-blue:#0F62FE;
+  --bg:#0A0F1E;
+  --panel:#0E152B;
+  --text:#E6F0FF;
+  --muted:#9BB0D3;
+  --accent: rgba(15,98,254,0.2);
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+  color:var(--text);
+  background: radial-gradient(1200px 700px at 10% -10%, rgba(15,98,254,.12), transparent 60%),
+              radial-gradient(1000px 600px at 110% 10%, rgba(15,98,254,.08), transparent 60%),
+              var(--bg);
+  overflow-x:hidden;
+}
+
+/* Soft animated gradient waves */
+.bg-anim{
+  position:fixed; inset:0;
+  background:
+    radial-gradient(40% 30% at 20% 10%, rgba(15,98,254,.20), transparent 60%),
+    radial-gradient(35% 25% at 80% 15%, rgba(15,98,254,.15), transparent 60%),
+    radial-gradient(30% 20% at 60% 80%, rgba(15,98,254,.12), transparent 60%);
+  filter: blur(40px);
+  animation: float 12s ease-in-out infinite alternate;
+  pointer-events:none;
+}
+@keyframes float{
+  from{transform: translateY(-10px) scale(1)}
+  to{transform: translateY(10px) scale(1.03)}
+}
+
+.card{
+  background: linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,.0));
+  border:1px solid rgba(255,255,255,.06);
+  box-shadow: 0 10px 30px rgba(0,0,0,.35);
+  backdrop-filter: blur(6px);
+  border-radius: 18px;
+}
+
+.app{max-width:980px;margin:32px auto;padding:22px 22px 18px}
+
+.top h1{display:flex;align-items:center;gap:10px;margin:0 0 6px;font-weight:700;letter-spacing:.3px}
+.top .sub{margin:0 0 16px;color:var(--muted);font-size:14px}
+.ibm-dot{width:12px;height:12px;border-radius:50%;background:var(--ibm-blue);box-shadow:0 0 12px var(--ibm-blue), 0 0 24px rgba(15,98,254,.6);display:inline-block}
+
+.chat{display:flex;flex-direction:column;gap:14px;margin:16px 0;min-height:280px;background:rgba(255,255,255,.02);padding:16px;border-radius:12px;border:1px solid rgba(255,255,255,.06)}
+.msg{padding:12px 14px;border-radius:12px;max-width:78%;white-space:pre-wrap;line-height:1.4;border:1px solid rgba(255,255,255,.06)}
+.me{background:rgba(255,255,255,.04);align-self:flex-end}
+.bot{background:rgba(15,98,254,.08);align-self:flex-start;border-left:4px solid var(--ibm-blue)}
+.badge{display:inline-block;padding:2px 8px;border-radius:999px;font-size:12px;margin-right:8px;color:#03112b}
+.badge.low{background:#9ef9b0}
+.badge.moderate{background:#ffd27e}
+.badge.urgent{background:#ff9e9e}
+
+.composer{display:flex;gap:8px;align-items:center}
+.composer input{flex:1;padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,.08);background:rgba(2,8,23,.7);color:var(--text);outline:none}
+.btn{padding:10px 12px;border-radius:10px;border:0;background:var(--ibm-blue);color:white;font-weight:700;cursor:pointer;box-shadow:0 6px 16px rgba(15,98,254,.35);transition:transform .08s ease, box-shadow .2s}
+.btn:hover{transform:translateY(-1px);box-shadow:0 10px 20px rgba(15,98,254,.45)}
+.btn.ghost{background:transparent;color:var(--text);border:1px solid rgba(255,255,255,.08)}
+.btn.small{padding:8px 10px;font-size:13px}
+
+.tools{display:flex;align-items:center;gap:10px;margin-top:10px}
+#status{color:var(--muted)}
