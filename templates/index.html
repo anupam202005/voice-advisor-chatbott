@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Voice Health Advisor</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div class="bg-anim"></div>
+  <div class="app card">
+    <header class="top">
+      <h1><span class="ibm-dot"></span> Voice Health Advisor</h1>
+      <p class="sub">IBM-integrated (Mock Mode) • Educational guidance only</p>
+    </header>
+
+    <section id="chat" class="chat"></section>
+
+    <section class="composer">
+      <input id="msg" type="text" placeholder="Describe your symptoms... (e.g., I have fever and headache since yesterday)" />
+      <button id="sendBtn" class="btn">Send</button>
+      <button id="micBtn" class="btn ghost">🎤 Speak</button>
+      <button id="speakBtn" class="btn ghost">🔊 Read Reply</button>
+    </section>
+
+    <section class="tools">
+      <button id="resetBtn" class="btn small">Clear History</button>
+      <span id="status"></span>
+    </section>
+  </div>
+
+  <script src="/static/main.js"></script>
+</body>
+</html>
