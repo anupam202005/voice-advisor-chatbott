@@ -1,0 +1,18 @@
+[
+  {
+    "ts": "2025-11-09T04:48:54.101228Z",
+    "user": "Meat, soups, bananas, curd, rice. Over the counter options Check label and allergies. Paracetamol 500 milligrams as per label. Avoid overdose. Monitor asterisk.",
+    "bot": "I didn\u2019t detect specific symptoms. Could you share duration, fever, pain location, or triggers? Meanwhile, rest, hydrate, and avoid heavy meals. If chest pain, trouble breathing, severe weakness, or symptoms >72 hours, please see a clinician.",
+    "meta": {
+      "mode": "MOCK"
+    }
+  },
+  {
+    "ts": "2025-11-11T05:29:08.719586Z",
+    "user": "i have headache",
+    "bot": "Got it \u2014 here are a few steps that usually help.\n\n**Do now:**\n- Rest and avoid strenuous activity\n- Hydrate well (water/ORS/soups) \u2014 small, frequent sips\n- Light, easy-to-digest meals (khichdi, soups, bananas, curd rice)\n\n**Over-the-counter options (check label & allergies):**\n- Paracetamol 500 mg as per label (avoid overdose)\n\n**Monitor:**\n- Check temperature 2\u20133\u00d7/day if fever\n- Watch urine output/dizziness/dry mouth (dehydration signs)\n- Note worsening symptoms, rash, confusion, or persistent high fever\n\n**Seek medical help if:**\n- Consult a clinician if symptoms persist >72 hours or worsen\n\n*Note: General guidance only \u2014 not a diagnosis. For emergencies, seek immediate care.*\n\n> You said: \u201ci have headache\u201d. I tailored the steps based on those symptoms.",
+    "meta": {
+      "mode": "MOCK"
+    }
+  }
+]
